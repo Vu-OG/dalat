@@ -33,7 +33,7 @@ function Header() {
                        }}>
                         <FontAwesomeIcon  className="text-[20px]" icon={faBars} />
                        </button>
-                        <ul className="fixed right-[-150px] top-[55.3px] h-[calc(100vh)] bg-white md:static md:flex md:h-auto md:gap-[20px] xl:gap-[50p] xL:top-[80.3px]">
+                        <ul className="fixed right-[-150px] top-[55.3px] h-[calc(100vh)] bg-white md:static md:flex md:h-auto md:gap-[20px] xl:gap-[50p] xl:top-[80.3px]">
                             <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#home">Trang Chủ</a></li>
                             <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#about">Khám Phá</a></li>
                             <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#services">Về Chúng Tôi</a></li>
