@@ -9,20 +9,20 @@ function Header() {
     const NavShow = () => {
         const nav = document.querySelector("nav ul");
         if (NavActive) {
-            nav.style.right = "-10px";
-            nav.style.transition = "all 0.5s ease-in-out";
+            nav.style.right = "0px";
+            nav.style.transition = "all 0.2s ease-in-out";
         } else {
-            nav.style.right = "-50vw";
-            nav.style.transition = "all 0.5s ease-in-out";
+            nav.style.right = "-150px";
+            nav.style.transition = "all 0.2s ease-in-out";
         }
     };
     return (
-        <header className="max-ms:border-b-[0.5px] max-ms:border-gray w-[100vw] fixed max-ms:relative max-ms:h-[53px] max-lg:h-[59px] h-[80px] flex max-ms:items-start max-ms:pt-[10px] max-md:px-[10px] items-center bg-white justify-between px-[88px]">
-            <img className="max-ms:h-[40px] max-lg:h-[50px] h-[71px]" src={logo} alt="Logo" />
-            <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                    <nav className="ml-4 max-ms:fixed max-ms:right-[10px] max-ms:translate-y-[-50%]  max-ms:top-[27px]">
-                       <button onClick={() => {
+        <header className="z-[5] border-b-[0.3px] border-gray-700 w-[100vw] sticky top-0 flex justify-between items-center px-[10px] py-[5px] bg-[#fff] shadow-md md:px-[50px] xl:px-[100px]">
+            <img className="relatve h-[45px] xl:h-[70px] translate-y-[4px] xl:translate-y-[5px]" src={logo} alt="Logo" />
+            <div className="">
+                <div className="">
+                    <nav className="">
+                       <button className = "flex justify-center items-center h-[35px] w-[35px] bg-[#e4e6ea] rounded-[5px] md:hidden" onClick={() => {
                             if (NavActive) {
                                 NavShow();
                                 setNavActive(false);
@@ -30,14 +30,14 @@ function Header() {
                                 NavShow();
                                 setNavActive(true);
                             }
-                       }} className="w-[30px] h-[30px] flex items-center justify-center  bg-[#e4e6ea] md:fixed md:top-[-1000px] rounded-[5px]">
-                        <FontAwesomeIcon  className="text-[18px]" icon={faBars} />
+                       }}>
+                        <FontAwesomeIcon  className="text-[20px]" icon={faBars} />
                        </button>
-                        <ul className="bg-white max-md:right-[-50vw] max-md:fixed max-md:h-[100vh] max-md:block flex space-x-[50px] max-md:top-[59px]">
-                            <li className="max-ms:w-[100%]"><a className=" pl-[10px] font-['Roboto', sans-serif] text-[18px] max-ms:p-y-[50px] max-lg:text-[12px] leading-[21px] lg:font-[500]" href="#home">Home</a></li>
-                            <li className="max-ms:w-[100%] max-ms:border-t-[0.5px] max-ms:border-gray-300 "><a className="pl-[10px] font-['Roboto', sans-serif] text-[18px] max-ms:p-y-[50px] max-lg:text-[12px] leading-[21px] lg:font-[500]" href="#about">Explore</a></li>
-                            <li className="max-ms:w-[100%] max-ms:border-t-[0.5px] max-ms:border-gray-300 "><a className="pl-[10px] font-['Roboto', sans-serif] text-[18px] max-ms:p-y-[50px] max-lg:text-[12px] leading-[21px] lg:font-[500]" href="#services">About Us</a></li>
-                            <li className="max-ms:w-[100%] max-ms:border-t-[0.5px] max-md:border-gray-300 "><a className="pl-[10px] font-['Roboto', sans-serif] text-[18px] max-md:p-y-[50px] max-lg:text-[12px] leading-[21px] lg:font-[500]" href="#contact">Photo Album</a></li>
+                        <ul className="fixed right-[-150px] top-[55.3px] h-[calc(100vh)] bg-white md:static md:flex md:h-auto md:gap-[20px] xl:gap-[50p] xL:top-[80.3px]">
+                            <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#home">Home</a></li>
+                            <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#about">Explore</a></li>
+                            <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#services">About Us</a></li>
+                            <li className="px-[10px] py-[6px] border-b-[0.3px] border-gray-300 md:border-b-0"><a className="font-['Roboto',_sans-serif] font-[500] text-[13px] xl:text-[18px]" href="#contact">Photo Album</a></li>
                         </ul>
                     </nav>
                 </div>
